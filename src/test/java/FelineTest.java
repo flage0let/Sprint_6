@@ -35,8 +35,6 @@ public class FelineTest {
         Mockito.verify(feline, Mockito.times(1)).getFood("Хищник");
         //Проверяем что метод отдает корректно полученные значения от стаба.
         Assert.assertEquals(List.of("Животные", "Птицы", "Рыба"), result);
-
-        //Для вызова getFood используем spy, т.к. оба метода из одного класса
     }
 
     @Test

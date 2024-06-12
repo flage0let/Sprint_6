@@ -46,7 +46,5 @@ public class LionTest {
         List<String> result = lion.getFood();
         Mockito.verify(feline, Mockito.times(1)).getFood("Хищник");
         Assert.assertEquals(List.of("Животные", "Птицы", "Рыба"), result);
-
-        //Assert.assertEquals(List.of("Животные", "Птицы", "Рыба"), lion.getFood());
     }
 }
